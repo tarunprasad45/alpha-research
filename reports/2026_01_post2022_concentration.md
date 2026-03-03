@@ -1,68 +1,84 @@
-Post-2022 Market Structure: Concentration Analysis
-Research Question
+# Post-2022 Market Structure: Concentration vs Structural Dependence
 
-Did diversification break during the AI rally?
+## Abstract
 
-Specifically:
+This note investigates whether the post-2022 AI rally represented a structural shift in index dependence on mega-cap equities, or merely a dispersion-driven concentration of returns.
 
-Did cap-weighted index performance increasingly diverge from equal-weight?
+Two questions are examined:
 
-Did structural dependence on mega-cap leaders increase?
+1. Did cap-weighted index performance increasingly diverge from equal-weight performance?
+2. Did statistical dependence on mega-cap leaders increase during the same period?
 
-Methodology
+---
 
-SPY (cap-weighted S&P 500)
+## Data & Instruments
 
-RSP (equal-weight S&P 500)
+- **SPY** — Cap-weighted S&P 500 proxy  
+- **RSP** — Equal-weight S&P 500 proxy  
+- **Top 5 Basket** — NVDA, AAPL, MSFT, AMZN, GOOGL  
 
-Top 5 basket: NVDA, AAPL, MSFT, AMZN, GOOGL
+**Regime split:** November 2022  
 
-Regime split: November 2022
+Daily data sourced via `yfinance`.
 
-Metrics:
+Top-5 basket weighted using a market-cap proxy:
+`shares outstanding × price`, normalized within basket.
 
-Cumulative return comparison
+---
 
-6-month rolling relative performance (SPY / RSP)
+## Methodology
 
-60-day rolling R² between SPY and weighted top-5 basket
+The following metrics were computed:
 
-Top-5 basket weighted by rolling market-cap proxy using shares outstanding.
+1. Cumulative return comparison (SPY vs RSP)
+2. 6-month rolling relative performance (SPY / RSP)
+3. 60-day rolling R² between SPY returns and weighted Top-5 basket returns
 
-Findings
-1. Performance Concentration
+R² is used as a measure of structural explanatory power.
 
-Pre-AI:
-SPY: +54.1%
-RSP: +49.1%
+---
 
-Post-AI:
-SPY: +86.6%
-RSP: +54.4%
+## Results
 
-Relative acceleration (6M avg):
-Pre-AI: 0.0061
-Post-AI: 0.0337
+### Performance Divergence
 
-→ Performance concentration increased materially post-2022.
+**Pre-AI Regime**
+- SPY: +54.1%
+- RSP: +49.1%
 
-2. Structural Dependence
+**Post-AI Regime**
+- SPY: +86.6%
+- RSP: +54.4%
 
-Average Rolling R² (SPY explained by weighted top 5):
+**Average 6-month relative acceleration**
+- Pre-AI: 0.0061
+- Post-AI: 0.0337
 
-Pre-AI: 0.7220
-Post-AI: 0.7119
+Performance concentration increased materially.
 
-→ Statistical dependence did not increase.
+---
 
-Interpretation
+### Structural Dependence
 
-Post-2022 concentration appears driven by amplified return dispersion rather than increased structural dependence on mega-cap leaders.
+**Average Rolling R² (SPY explained by weighted Top-5):**
 
-The index was already heavily correlated with top constituents before 2022.
+- Pre-AI: 0.7220  
+- Post-AI: 0.7119  
 
-The shift appears performance-driven, not structurally driven.
+Statistical dependence did not increase.
 
-Note
+---
 
-RSP rebalances quarterly; part of SPY/RSP divergence may reflect rebalancing drag rather than pure concentration.
+## Interpretation
+
+While cap-weighted performance significantly outpaced equal-weight post-2022, the explanatory power of mega-cap leaders over index returns did not increase.
+
+This suggests that the post-2022 concentration episode was dispersion-driven rather than structurally driven.
+
+The index was already highly correlated with its largest constituents prior to the AI rally.
+
+---
+
+## Caveat
+
+RSP rebalances quarterly; part of the SPY–RSP divergence may reflect rebalancing drag rather than pure concentration effects.
