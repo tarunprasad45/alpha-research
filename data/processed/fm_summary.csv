@@ -1,0 +1,10 @@
+Period,Signal,Mean Beta,NW SE,t-stat,Sig,Avg R²
+Full Sample,Industry,0.0107,0.011,0.97,,0.054
+Full Sample,Stock,0.0049,0.004,1.22,,0.054
+Full Sample,Factor,1.0709,0.8752,1.22,,0.054
+Pre-AI,Industry,0.0108,0.017,0.64,,0.06
+Pre-AI,Stock,0.0045,0.0049,0.92,,0.06
+Pre-AI,Factor,0.1905,0.1931,0.99,,0.06
+Post-AI,Industry,0.0104,0.0116,0.9,,0.045
+Post-AI,Stock,0.0054,0.0069,0.79,,0.045
+Post-AI,Factor,2.3255,1.9921,1.17,,0.045
