@@ -1,0 +1,4 @@
+regime,quarters,persistence_ratio,vs_random
+pre_covid,29,0.1034,-0.0216
+covid_recovery,8,0.125,0.0
+rate_hike,17,0.0588,-0.0662

@@ -1,0 +1,4 @@
+regime,n_obs,rho_lag1,pval_lag1
+pre_covid,232,0.0378,0.5671
+covid_recovery,56,0.0272,0.8422
+rate_hike,128,-0.0015,0.9867

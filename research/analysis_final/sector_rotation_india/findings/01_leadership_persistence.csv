@@ -1,0 +1,2 @@
+n_quarters,random_baseline,top1_persistence,top_quartile_persist,verdict
+54,0.125,0.0926,0.2685,MEAN-REVERTING
